@@ -35,4 +35,10 @@ window.addEventListener("DOMContentLoaded", () => {
             "chatWindowMaxHeight": 640
         }
     });
+    setTimeout(() => {
+        const conversationHandler = widget.getConversationHandler();
+        if (conversationHandler) {
+            widget.expand();
+        }
+    }, 1000);
 });
