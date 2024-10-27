@@ -43,4 +43,24 @@ body {
 
 .byline {
   font-style: italic;
+  margin-bottom: 10px;
+}
+
+.authors {
+  font-weight: bold;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }

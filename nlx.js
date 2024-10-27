@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
             languageCode: "en-US"
         },
         titleBar: {
-            "title": "Support",
+            "title": "Try SVG-Gen",
             "withCollapseButton": true,
             "withCloseButton": true,
             "logo": "https://img.icons8.com/?size=256&id=11683&format=png"
