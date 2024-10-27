@@ -14,7 +14,7 @@
     SVG-Gen: an LLM Fine-tuned for Creating Vector Graphics
   </h1>
   <div class="byline">
-    And you can try it right now in the bottom right corner!
+    And you can try it right now in the bottom right corner! (Just kidding, it won't actually work. But, if it did work, you would use the widget on the bottom right corner).
   </div>
   <div class="authors">
     Nabeel Hossain &middot; Abdulrahman Tabbaa &middot; Saad Mufti &middot; Azeez Ishaqui
@@ -30,12 +30,17 @@
   >
   </iframe>
   <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam est dicta eius aspernatur. Voluptas mollitia laboriosam necessitatibus autem! Sint mollitia hic architecto dolorem placeat atque nulla esse quo labore autem!
-    Odit asperiores nostrum alias non sequi! Hic, officia nisi. Similique doloremque odit cum veniam laudantium amet autem qui laboriosam, voluptatem placeat deserunt dolorem velit quidem dolores. Exercitationem laudantium minus totam!
+    SVG images are very special (and unlike PNG or JPEG images) in that scaling them up or down does not result in a loss of quality. This is because SVG images are vector graphics, which means that they are defined by mathematical equations rather than pixels. This makes them perfect for logos, icons, and other images that need to be displayed at different sizes.
   </p>
   <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam est dicta eius aspernatur. Voluptas mollitia laboriosam necessitatibus autem! Sint mollitia hic architecto dolorem placeat atque nulla esse quo labore autem!
-    Odit asperiores nostrum alias non sequi! Hic, officia nisi. Similique doloremque odit cum veniam laudantium amet autem qui laboriosam, voluptatem placeat deserunt dolorem velit quidem dolores. Exercitationem laudantium minus totam!
+    Unfortunately, this also makes them difficult to render using traditional LLMs. Whereas pixel values are easy to predict, the mathematical equations that define SVG images are much more complex. It's difficult for an LLM to notice visually unappealing elements in an SVG as compare to a PNG. There are PNG to SVG converters (and genAI capabilities) available on advanced photoshop applications like Adobe Photoshop, but the casual person wanting a logo will not have access to these advanced tools or the knowledge to navigate the complexities of these tools. This is where SVG-Gen comes in. SVG-Gen is a language model that has been fine-tuned on a dataset of SVG images. This allows it to generate SVG images from text descriptions, making it easy to create vector graphics without needing to know how to use a graphic design tool.
+  </p>
+  <div class="images"></div>
+    <img src="PNG_Logo.webp" alt="PNG Logo" width="200" height="200">
+    <img src="SVG_Logo.svg" alt="SVG Logo" width="200" height="200">
+  </div>
+  <p>
+    Two LLMs were fed the prompt "May you generate an ___ image of a logo for a tech company named Magenta which focuses on selling telecommunication devices.". For the top left image, the ___ in the prompt was replace with "PNG". For the top right image, the ___ in the prompt was replaced with "SVG". It can beseen that the PNG image is more detailed and better-looking than the SVG image.
   </p>
   <script defer src="https://unpkg.com/@nlxai/chat-widget/lib/index.umd.js"></script>
   <script type="module" src="nlx.js"></script>

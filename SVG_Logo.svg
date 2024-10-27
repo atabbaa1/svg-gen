@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="70" fill="#f5f5f5"/>
+  
+  <!-- Signal waves -->
+  <path d="M100 100 Q 140 100, 140 60 Q 140 100, 180 100" 
+        fill="none" 
+        stroke="#ff00ff" 
+        stroke-width="8"
+        stroke-linecap="round"/>
+  <path d="M100 100 Q 150 100, 150 50 Q 150 100, 200 100" 
+        fill="none" 
+        stroke="#ff00ff" 
+        stroke-width="6"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  <path d="M100 100 Q 160 100, 160 40 Q 160 100, 220 100" 
+        fill="none" 
+        stroke="#ff00ff" 
+        stroke-width="4"
+        stroke-linecap="round"
+        opacity="0.4"/>
+        
+  <!-- Letter M -->
+  <path d="M70 80 L70 120 L85 100 L100 120 L100 80" 
+        fill="#ff00ff"
+        stroke="none"/>
+        
+  <!-- Company Name -->
+  <text x="240" y="110" 
+        font-family="Arial, sans-serif" 
+        font-size="40" 
+        font-weight="bold" 
+        fill="#333333">MAGENTA</text>
+</svg>
